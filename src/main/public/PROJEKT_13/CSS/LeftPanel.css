@@ -1,0 +1,117 @@
+#leftPanel_ {
+    writing-mode:horizontal-tb;
+    float: left;
+
+    height: 93vh;
+    width: 0px;
+    position: fixed;
+    float: left;
+
+    left: 0px;
+    z-index: 101;
+    background-color: #001733;
+    /* background-color: #0a1620; */
+
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#leftPanel {
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position:-ms-page;
+
+
+    width: 5%;
+    height: 93vh;
+    background-color: red;
+    float: left;
+    background-color: #001733;
+    /* background-color: #0a1620; */
+
+    color: #7b7f82;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+/* VERSE */
+.verse{
+    position: relative;
+    width: 90%;
+    height: 70px;
+    left: 0;
+    right: 0;
+    background-color: #263a56;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 10px;
+    float: none !important;
+    display: block !important;
+}
+
+.verse:hover{
+    background-color: #203758;
+}
+
+.verse .place {
+    width: 25%;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+
+    border-width: 0px 2px 0px 0px;
+    border-color: #001733;
+    border-style: solid;
+ 
+}
+
+.verse .nickname {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+    float: left;
+    color: #0368e3;
+    font-weight: 300;
+}
+
+
+.material-symbols-outlined {
+
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.bolt_div{
+    display: flex ;
+    align-items: center ;
+    margin-left: 10px;
+    float: left;
+
+    width: 23px;
+    height: 100%;
+}
+
+.verse .result {
+    display: flex ;
+    align-items: center ;
+    color: white;
+
+    height: 100%;
+    font-size: 20px;
+}

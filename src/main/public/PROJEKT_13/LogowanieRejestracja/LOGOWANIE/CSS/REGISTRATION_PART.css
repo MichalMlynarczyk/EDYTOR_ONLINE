@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #b5c8cd;
+    font-size: 20px;
+}
+
+body{
+    background: #0d1117;
+    padding: 0 10px;
+}
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #161b22;
+    margin: 12% auto 4% auto;
+    padding: 30px 30px 0px 30px;
+    border: 2px solid #45494e;
+    border-radius: 8px;
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .input_field{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.wrapper .form .input_field label{
+    width: 200px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.wrapper .form .input_field .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #73767a;
+    background-color: #0d1117;
+    font-size: 17px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s easy;
+}
+
+.wrapper .form .input_field .input[type='password']{
+    width: 100%;
+    outline: none;
+    border: 1px solid #73767a;
+    background-color: #0d1117;
+    font-size: 17px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s easy;
+    letter-spacing: 0.125em;
+    font: small-caption;
+    font-weight: 700;
+
+}
+
+.wrapper .form .input_field .input:focus{
+    border: 2px solid #58a6ff;
+}
+
+.wrapper .form .input_field .btn{
+    width: 100%;
+    padding: 12px 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 0;
+    background-color: #238636;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.wrapper .form .input_field .btn:hover{
+    background-color: #39924a;
+}

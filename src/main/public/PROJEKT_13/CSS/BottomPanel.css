@@ -1,0 +1,14 @@
+ #bottomPanel {
+    position: absolute;
+    bottom: 0;
+    left: 5%; /* szerokość leftPanel */
+    right: 0;
+    height: 11vh;
+    background-color: rgba(0,36,81,255);
+    z-index: 100;
+
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: white;
+} 
+   

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.signIn{
+    max-width: 500px;
+    width: 100%;
+    background: #0d1117;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #45494e;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.signIn .btn{
+    outline: none;
+    background-color: #0d1117;
+    border: 0;
+    color: #58a6ff;
+    cursor: pointer;
+}
+
+.signIn .btn:hover{
+    text-decoration: underline;
+}

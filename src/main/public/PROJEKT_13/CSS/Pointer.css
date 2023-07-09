@@ -1,0 +1,207 @@
+.pointer {
+   width: 15%;
+   height: 100%;
+   color: rgb(206, 202, 202);
+   float: left;
+   border-style: solid;
+   border-width: 0px 1px 0px 0px;
+   border-color: rgb(3, 53, 115);
+   /* border-color: #112231 ; */
+
+}
+
+.first {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    background-color: rgba(0,36,81,255);
+    /* background-color: #09131b; */
+}
+
+
+
+.second {
+    height: 60%;
+    display: flex;
+   
+    justify-content: center;
+    font-size: 3vh;
+    color: rgb(151, 33, 33);
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+
+    background: linear-gradient(to bottom, rgba(0,36,81,255), rgb(3, 53, 115));
+    /* background: linear-gradient(to bottom, #09131b, #0e1c27); */
+
+
+
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+
+ .toggle-switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: 20%;
+    height: 100%;
+    float: left;
+    background: linear-gradient(to bottom, rgba(0,36,81,255), rgb(3, 53, 115));
+    /* background: linear-gradient(to bottom, #09131b, #162b3c); */
+
+    /* padding: 10px; */
+
+}
+
+.toggle-switch {
+  margin: 0;
+}
+
+.toggle-switch {
+  width: 10px;
+  position: relative;
+}
+
+.toggle-switch input {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-switch input:checked {
+  z-index: 1;
+}
+
+.toggle-switch input:checked + label {
+  opacity: 1;
+  cursor: default;
+}
+
+.toggle-switch input:not(:checked) + label:hover {
+  opacity: 0.5;
+}
+
+.toggle-switch label {
+  color: #fff;
+  opacity: 0.33;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.toggle-switch .toggle-outside {
+  height: 100%;
+  border-radius: 17px;
+  padding: 11px;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.toggle-switch .toggle-inside {
+  border-radius: 50%;
+  background: #424242;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.switch-vertical {
+  background-color: #00F;
+  width: 0px;
+  height: 60px;
+  margin-left: 27px;
+}
+
+.switch-vertical input {
+  height: 100%;
+  width: 60px;
+  right: 0;
+  margin: 0;
+}
+
+.switch-vertical label {
+  font-size: 15px;
+  line-height: 30px;
+  display: block;
+  width: 80px;
+  height: 50%;
+  margin: 0;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.switch-vertical .toggle-outside {
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 23px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.switch-vertical .toggle-inside {
+  height: 17px;
+  left: 3px;
+  top: 3px;
+  width: 17px;
+}
+
+.switch-vertical input:checked ~ .toggle-outside .toggle-inside {
+  top: 3px;
+}
+
+.switch-vertical input ~ input:checked ~ .toggle-outside .toggle-inside {
+  top: 40px;
+} 
+
+
+/* .my-notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 9999; /* Ustawienie z-index */
+/* } */ 
+
+.my-notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  opacity: 1;
+  animation: fadeOut 4s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

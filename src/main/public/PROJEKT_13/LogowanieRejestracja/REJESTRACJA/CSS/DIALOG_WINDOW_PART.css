@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.dialogWindow .text{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.dialogWindow .text label{
+    color: #b5c8cd;
+    font-weight: 700;
+}
+.dialogWindow{
+    padding: 20px;
+    padding-top: 10px;
+    color: #45494e;
+    background-color: #0d1117;
+}
+.dialogWindow button{
+    margin-left: 25%;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    background-color: rgb(134, 26, 26);
+    border: none;
+    font-weight: 700;
+}
+
+.dialogWindow button:hover{
+  background-color: rgb(131, 53, 53);
+}
+.dialogWindow::backdrop{
+    background: linear-gradient(45deg, red, rgb(39, 3, 3));
+    opacity: 0.2;
+  }

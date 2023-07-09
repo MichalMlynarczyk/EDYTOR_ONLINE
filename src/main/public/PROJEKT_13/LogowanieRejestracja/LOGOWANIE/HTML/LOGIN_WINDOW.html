@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Form</title>
+        <!--STYLESHEET FILE-->
+        <link rel="stylesheet" type="text/css" href="..\CSS\REGISTRATION_PART.css">
+        <link rel="stylesheet" type="text/css" href="..\CSS\DIALOG_WINDOW_PART.css">
+        <link rel="stylesheet" type="text/css" href="..\CSS\SIGN_IN_PART.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+
+<!--BODY-->
+    <body onload="start()">
+
+        <!--LOGIN PART-->
+        <div class="wrapper">
+            <div class="title">LOGIN</div>
+            <div class="form">
+                <!--EMAIL-->
+                <div class="input_field">
+                    <label>Email</label>
+                    <input type="text" autocomplete="off"  class="input" id="Email">
+                </div>
+                <!--PASSWORD-->
+                <div class="input_field">
+                    <label>Password</label>
+                    <input type="password" autocomplete="off" class="input" id="Password">
+                </div>
+                <!--BUTTON-->
+                <div class="input_field">
+                    <input type="submit" value="Sign in" class="btn" id="loginButton" onclick="validate()">
+                </div>
+            </div>
+        </div>
+
+        <!--REGISTRATION PART-->
+        <div class="register">
+            <div class="msg">
+                <label>New to library?</label>
+                <input type="submit" value="Create an account" class="btn" id="toRegistration">
+            </div>
+        </div>
+        
+        <!--DIALOG WINDOW PART-->
+        <dialog class="dialogWindow" id="dialogWindow">
+            <div class="text"><label>The data provided are incorrect!</label></div>
+            <button id="closeDialogWindow">TRY AGAIN</button>
+        </dialog>
+
+        <!--SKRYPT-->
+        <script src="..\JS\InitialDataValidation.js"></script>
+        <script src="..\JS\SendDataToServer.js"></script>
+        <script src="..\JS\Redirecting.js"></script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <!--STYLESHEET FILE-->
+        <link rel="stylesheet" type="text/css" href="..\CSS\REGISTRATION_PART.css">
+        <link rel="stylesheet" type="text/css" href="..\CSS\DIALOG_WINDOW_PART.css">
+        <link rel="stylesheet" type="text/css" href="..\CSS\SIGN_IN_PART.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+
+<!--BODY-->
+    <body onload="start()">
+
+        <!--REGISTRATION PART-->
+        <div class="wrapper">
+            <div class="title">Registration</div>
+            <div class="form">
+                <!--USERNAME-->
+                <div class="input_field">
+                    <label>User name</label>
+                    <input type="text" autocomplete="off"  class="input" id="username" name="username">
+                </div>
+                <div class="errorMsg" id="nameError">
+                    <label>Invalid user name</label>
+                </div>
+                <!--EMAIL-->
+                <div class="input_field">
+                    <label>Email</label>
+                    <input type="text" autocomplete="off"  class="input" id="Email">
+                </div>
+                <div class="errorMsg" id="emailError">
+                    <label>Invalid email</label>
+                </div>
+
+                <!--PASSWORD-->
+                <div class="input_field">
+                    <label>Password</label>
+                    <input type="password" autocomplete="off" class="input" id="Password">
+                </div>
+                <div class="errorMsg" id="passwordError">
+                    <label>Password too short</label>
+                </div>
+                <div class="input_field">
+                    <label>Confirm Password</label>
+                    <input type="password" autocomplete="off" class="input" id="ConfirmPassword">
+                </div>
+                <div class="errorMsg" id="cPassError">
+                    <label>Passwords are not identical</label>
+                </div>
+                <div class="input_field">
+                    <input type="submit" value="Register" class="btn" id="registartionButton">
+                </div>
+            </div>
+        </div>
+
+        <!--SIGN IN PART-->
+        <div class="signIn">
+            <div class="msg">
+                <label>Already have an account?</label>
+            </div>
+            <input type="submit" value="Sign in" class="btn" id="toLogin">
+        </div>
+        
+        <!--DIALOG WINDOW PART-->
+        <dialog class="dialogWindow" id="dialogWindow">
+            <div class="text" id="text"><label>The data provided are incorrect!</label></div>
+            <button id="closeDialogWindow">TRY AGAIN</button>
+        </dialog>
+
+        <!--SKRYPT-->
+        <script src="..\JS\InitialDataValidation.js"></script>
+        <script src="..\JS\SendDataToServer.js"></script>
+        <script src="..\JS\Redirecting.js"></script>
+        <script src="../../../JS/message.js"></script>
+    </body>
+</html>
